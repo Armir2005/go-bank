@@ -1,6 +1,6 @@
 # go-bank
 
-go-bank is a simple interactive banking simulation written in Go. It allows users to create accounts, deposit, withdraw, transfer money, and view account balances and transaction histories through a command-line interface.
+go-bank is a simple interactive banking simulation written in Go with multiplayer functionality. It allows users to create accounts, deposit, withdraw, transfer money, and view account balances and transaction histories through a command-line interface.
 
 ## Installation
 
@@ -16,7 +16,19 @@ go-bank is a simple interactive banking simulation written in Go. It allows user
     You can run the program without building by using:
 
     ```sh
-    go run *.go
+    go run . main
+    ```
+
+    Or run a server:
+
+    ```sh
+    go run . server
+    ```
+
+    Or connect a client to a server:
+
+    ```sh
+    go run . client client-ip:8080
     ```
 
     Or build an executable:
@@ -69,6 +81,8 @@ go-bank is a simple interactive banking simulation written in Go. It allows user
   Prints the transaction history for the account.
   _Example:_
   `transactions`
+  **message [Text]**
+  Sends a message to all clients.
 - **clear**
   Clears the terminal screen.
 - **exit**

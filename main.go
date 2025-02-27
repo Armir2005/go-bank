@@ -9,6 +9,26 @@ import (
 )
 
 func main() {
+	if len(os.Args) < 2 {
+		startSinglePlayer()
+		return
+	}
+
+	switch os.Args[1] {
+	case "server":
+		startServer()
+	case "client":
+		if len(os.Args) < 3 {
+			fmt.Println("Usage: client [server-address]")
+			return
+		}
+		startClient(os.Args[2])
+	default:
+		startSinglePlayer()
+	}
+}
+
+func startSinglePlayer() {
 	bank := NewBank()
 	scanner := bufio.NewScanner(os.Stdin)
 	var currentAccount *Account
