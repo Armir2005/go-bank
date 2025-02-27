@@ -27,13 +27,13 @@ go-bank is a simple interactive banking simulation written in Go. It allows user
 
 ## Usage
 
-    Start the program from your terminal:
+1. **Start the program from your terminal:**
 
     ```sh
     ./go-bank
     ```
 
-    When the program starts, you will see a prompt:
+2. **When the program starts, you will see a prompt:**
 
     ```sh
     Welcome to the go-bank system!
