@@ -12,6 +12,7 @@ const spacer = "*******************************"
 type Account struct {
 	ID           int
 	Owner        string
+	Password     string
 	Balance      float64
 	Transactions []Transaction
 	mu           sync.Mutex
@@ -37,14 +38,15 @@ func NewBank() *Bank {
 	}
 }
 
-func (b *Bank) CreateAccount(owner string) *Account {
+func (b *Bank) CreateAccount(owner, password string) *Account {
 	b.mu.Lock()
 	defer b.mu.Unlock()
 
 	account := &Account{
-		ID:      b.nextID,
-		Owner:   owner,
-		Balance: 0,
+		ID:       b.nextID,
+		Owner:    owner,
+		Password: password,
+		Balance:  0,
 	}
 	b.accounts[b.nextID] = account
 	b.nextID++

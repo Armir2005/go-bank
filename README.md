@@ -43,35 +43,35 @@ go-bank is a simple interactive banking simulation written in Go. It allows user
 
 ### Available Commands
 
-- help
+- **help**
   Displays a list of available commands.
-- create [Name]
+- **create [Name] [Password]**
   Creates a new account for the specified owner.
   _Example:_
-  `create Alice`
-- deposit [AccountID] [Amount] [Note]
+  `create Alice SuperSecurePassword`
+- **deposit [Amount] [Note]**
   Deposits the specified amount of money into the account. A note is added to the transaction.
   _Example:_
-  `deposit 1 1000 Initial deposit`
-- withdraw [AccountID] [Amount] [Note]
+  `deposit 1000 Initial deposit`
+- **withdraw [Amount] [Note]**
   Withdrwas the specified amount of money from the account with a note.
   _Example:_
-  `deposit 1 200 Rent payment`
-- transfer [fromID] [toID] [Amount] [Note]
+  `deposit 200 Rent payment`
+- **transfer [toID] [Amount] [Note]**
   Transfers money from one account to another.
   _Example:_
-  `transfer 1 2 300 Payment for goods`
-- balance [AccountID]
+  `transfer 2 300 Payment for goods`
+- **balance**
   Shows the current balance of the specified account.
   _Example:_
-  `balance 1`
-- transactions [AccountID]
+  `balance`
+- **transactions**
   Prints the transaction history for the account.
   _Example:_
-  `transactions 1`
-- clear
+  `transactions`
+- **clear**
   Clears the terminal screen.
-- exit
+- **exit**
   Exits the program.
 
 ## License
