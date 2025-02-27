@@ -6,9 +6,10 @@ go-bank is a simple interactive banking simulation written in Go. It allows user
 
 1. **Clone the repository:**
 
-   ```bash
+   ```sh
    git clone https://github.com/Armir2005/go-bank.git
    cd go-bank
+   ```
 
 2. **Build the project:**
 You can run the program without building by using:
