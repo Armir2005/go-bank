@@ -13,13 +13,13 @@ go-bank is a simple interactive banking simulation written in Go. It allows user
 
 2. **Build the project:**
 
-You can run the program without building by using:
+    You can run the program without building by using:
 
     ```sh
     go run *.go
     ```
 
-Or build an executable:
+    Or build an executable:
 
     ```sh
     go build -o go-bank
