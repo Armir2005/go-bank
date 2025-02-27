@@ -15,11 +15,13 @@ You can run the program without building by using:
 
     ```sh
     go run *.go
+    ```
 
 Or build an executable:
 
     ```sh
     go build -o go-bank
+    ```
 
 ## Usage
 
@@ -27,6 +29,7 @@ Start the program from your terminal:
 
     ```sh
     ./go-bank
+    ```
 
 When the program starts, you will see a prompt:
 
@@ -34,6 +37,7 @@ When the program starts, you will see a prompt:
     Welcome to the go-bank system!
     Type 'help', to show the available commands.
     > 
+    ```
 
 ### Available Commands
 
