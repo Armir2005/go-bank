@@ -12,6 +12,7 @@ go-bank is a simple interactive banking simulation written in Go. It allows user
    ```
 
 2. **Build the project:**
+
 You can run the program without building by using:
 
     ```sh
